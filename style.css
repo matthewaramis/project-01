@@ -79,20 +79,16 @@
   font-style: normal;
 }
 
-/*BODY*/
-
-* {
-  box-sizing: border-box;
-}
-
 .bodyfont {
   font-family: "Raleway Light";
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .headingfont {
   font-family: "Playfair Display Regular";
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .headingfont {
@@ -103,10 +99,12 @@ span {
   font-family: "Playfair Display Bold";
 }
 
-.container,
-a {
-  text-align: center;
-  max-width: 1240px;
+/*BODY*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*HEADER*/
@@ -115,19 +113,23 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 }
 
 header nav a {
   color: #e2574c;
+  margin: 0 1rem 0 1rem;
+  text-decoration: none;
 }
 
 .alohalogo {
   width: 10rem;
+  margin-top: 1rem;
 }
 
 .cart-icon {
   width: 4rem;
+  margin-top: 1rem;
 }
 
 header nav a:visited {
@@ -138,15 +140,17 @@ header nav a:visited {
 /*BANNER*/
 
 .banner {
-  height: 60rem;
+  height: 35rem;
   width: 100%;
-  background: url("images/banner-girl.png") no-repeat center,
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.6)),
+    url("images/banner-girl.png") no-repeat,
     url("images/flower-bkgd.jpg") repeat-x;
-  background-size: 14.5rem, 55rem;
-  background-position: center;
+  background-size: 100%, 15rem, 55rem;
+  background-position: center, center top 3.8rem, center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .banner p {
