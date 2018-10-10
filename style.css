@@ -95,11 +95,21 @@
   text-align: center;
 }
 
+.italic-heading {
+  font-family: "Playfair Display Italic";
+  font-weight: 150;
+  font-size: 2.5rem;
+}
+
+.bold-heading {
+  font-size: 2.5rem;
+}
+
 span {
   font-family: "Playfair Display Bold";
 }
 
-/*BODY*/
+/*OVERALL SETTINGS*/
 
 * {
   box-sizing: border-box;
@@ -118,7 +128,7 @@ header {
 
 header nav a {
   color: #e2574c;
-  margin: 0 1rem 0 1rem;
+  margin: 0rem 1rem 0 1rem;
   text-decoration: none;
 }
 
@@ -142,37 +152,51 @@ header nav a:visited {
 .banner {
   height: 35rem;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.4)),
     url("images/banner-girl.png") no-repeat,
     url("images/flower-bkgd.jpg") repeat-x;
-  background-size: 100%, 15rem, 55rem;
-  background-position: center, center top 3.8rem, center;
+  background-size: 100%, 16rem, 55rem;
+  background-position: center, center top 3.5rem, center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .banner p {
   color: white;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .banner h1 {
   color: white;
   font-size: 4rem;
-  margin: 1% 0%;
-}
-
-.italic-heading {
-  font-family: "Playfair Display Italic";
-  font-weight: 150;
+  margin: 1rem 0;
 }
 
 div {
   max-height: 100%;
   max-width: 100%;
+}
+
+/*BODY*/
+
+.container h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section h2 {
+  margin: 4rem 0 2rem 0;
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 /*FOOTER*/
@@ -182,23 +206,68 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   max-width: 100%;
-  background-color: #000000;
+  background-color: #242424;
+  margin-top: 0.5rem;
+  padding-bottom: 3rem;
 }
 
-footer div {
+.copyright {
   color: #ffffff;
 }
 
-footer.copyright a:visited {
+.copyright p {
+  margin: ;
+  font-family: "Playfair Display Regular";
+  font-size: 1rem;
+}
+
+.copyright a:visited {
   color: #ffffff;
 }
 
-footer.copyright a:hover {
+.copyright a:hover {
   color: #fa5a5a;
+}
+
+.top-copyright {
+  margin-top: 4rem;
+}
+
+.contactinfo {
+  margin-top: 1rem;
+}
+
+.contactinfo a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.address {
+  margin-top: 1rem;
+  color: #969696;
+}
+
+.socialmedia {
+  margin-top: 3rem;
 }
 
 .socialmedia ul li {
   list-style: none;
+}
+
+.socialmedia a {
+  margin: 1rem;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.socialmedia span {
+  margin-left: 1rem;
 }
 
 .smicons:visited {
@@ -207,18 +276,4 @@ footer.copyright a:hover {
 
 .smicons:hover {
   color: #e2574c;
-}
-
-.socialmedia a {
-  margin: 1rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
-}
-
-footer a {
-  text-decoration: none;
 }
