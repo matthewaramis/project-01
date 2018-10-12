@@ -89,9 +89,6 @@
   font-family: "Playfair Display Regular";
   font-size: 2rem;
   font-weight: 400;
-}
-
-.headingfont {
   text-align: center;
 }
 
@@ -199,16 +196,83 @@ section h2 {
   font-weight: 400;
 }
 
+/*SHOP*/
+
+#shop a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container .shop-mens {
+  width: 50%;
+  height: 40rem;
+  background: url("images/mens-category.jpg");
+  background-size: 50%;
+}
+
+.container .shop-trends {
+  background: url("images/trends-category.jpg");
+  background-size: 25%;
+}
+
+.container .shop-glasses {
+  background: url("images/glasses-category.jpg");
+  background-size: 25%;
+}
+
+.container .shop-sale {
+  background: url("images/sale-category.jpg");
+  background-size: 25%;
+}
+
+.container .shop-bags {
+  background: url("images/bags-category.jpg");
+  background-size: 25%;
+}
+
+.container .shop-womens {
+  background: url("images/womens-category.jpg");
+  background-size: 50%;
+}
+
+/*FEATURED*/
+
+/*NEWSLETTER*/
+
+#newsletter {
+  height: 21.5rem;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("images/wave-bkgd.jpg") no-repeat;
+  background-size: auto, auto;
+  background-position: bottom;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter h2 {
+  margin: 0 0 2rem 0;
+}
+
+.container .bodyfont {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*FOOTER*/
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 18rem;
   max-width: 100%;
   background-color: #242424;
   margin-top: 0.5rem;
-  padding-bottom: 3rem;
 }
 
 .copyright {
@@ -216,7 +280,6 @@ footer {
 }
 
 .copyright p {
-  margin: ;
   font-family: "Playfair Display Regular";
   font-size: 1rem;
 }
