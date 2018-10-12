@@ -172,11 +172,6 @@ header nav a:visited {
   margin: 1rem 0;
 }
 
-div {
-  max-height: 100%;
-  max-width: 100%;
-}
-
 /*BODY*/
 
 .container h2 {
@@ -236,6 +231,20 @@ section h2 {
 }
 
 /*FEATURED*/
+
+/* responsive image */
+.carousel-cell img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-carousel .carousel-cell {
+  width: 25%;
+}
+
+#featured {
+  margin-bottom: 4rem;
+}
 
 /*NEWSLETTER*/
 

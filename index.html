@@ -17,7 +17,9 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>Aloha Apparel Co.</title>
 </head>
 
@@ -63,53 +65,55 @@
 
     <section id="featured">
         <h2 class="headingfont"><span class="italic-heading">Most-Loved</span><span class="bold-heading">Products</span></h2>
-        <div>
-            <img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
-            <p class="productclass">DRESSES</p>
-            <p class="productdesc">Stretch Knit Dress</p>
-            <p class="price">$169.00</p>
-        </div>
-        <div>
-            <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
-            <p class="productclass">SHIRTS</p>
-            <p class="productdesc">Cotton Blue Shirt</p>
-            <p class="price">$89.00</p>
-        </div>
-        <div>
-            <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
-            <p class="productclass">DRESSES</p>
-            <p class="productdesc">Checked Stretch Dress</p>
-            <p class="price">$129.00</p>
-        </div>
-        <div>
-            <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
-            <p class="productclass">BAGS</p>
-            <p class="productdesc">Blue Hipster Backpack</p>
-            <p class="price">$69.00</p>
-        </div>
-        <div>
-            <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">
-            <p class="productclass">DENIM</p>
-            <p class="productdesc">Denim Overall Shorts</p>
-            <p class="price">$89.00</p>
-        </div>
-        <div>
-            <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
-            <p class="productclass">DRESSES</p>
-            <p class="productdesc">Pink Dotted Dress</p>
-            <p class="price">$99.00</p>
-        </div>
-        <div>
-            <img src="images/blue-silk-dress.jpg" alt="blue silk dress">
-            <p class="productclass">DRESSES</p>
-            <p class="productdesc">Blue Silk Dress</p>
-            <p class="price">$119.00</p>
-        </div>
-        <div>
-            <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
-            <p class="productclass">SHIRTS</p>
-            <p class="productdesc">Cotton Yellow Tshirt</p>
-            <p class="price">$39.00</p>
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <img src="images/stretch-knit-dress.jpg" alt="stretch knit dress">
+                <p class="productclass">DRESSES</p>
+                <p class="productdesc">Stretch Knit Dress</p>
+                <p class="price">$169.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
+                <p class="productclass">SHIRTS</p>
+                <p class="productdesc">Cotton Blue Shirt</p>
+                <p class="price">$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
+                <p class="productclass">DRESSES</p>
+                <p class="productdesc">Checked Stretch Dress</p>
+                <p class="price">$129.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack">
+                <p class="productclass">BAGS</p>
+                <p class="productdesc">Blue Hipster Backpack</p>
+                <p class="price">$69.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/demin-overall-shorts.jpg" alt="denim overall shorts">
+                <p class="productclass">DENIM</p>
+                <p class="productdesc">Denim Overall Shorts</p>
+                <p class="price">$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
+                <p class="productclass">DRESSES</p>
+                <p class="productdesc">Pink Dotted Dress</p>
+                <p class="price">$99.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/blue-silk-dress.jpg" alt="blue silk dress">
+                <p class="productclass">DRESSES</p>
+                <p class="productdesc">Blue Silk Dress</p>
+                <p class="price">$119.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+                <p class="productclass">SHIRTS</p>
+                <p class="productdesc">Cotton Yellow Tshirt</p>
+                <p class="price">$39.00</p>
+            </div>
         </div>
     </section>
 
@@ -167,6 +171,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 
