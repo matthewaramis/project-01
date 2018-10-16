@@ -49,6 +49,16 @@ $(document).ready(function() {
     // options
     cellAlign: "left",
     contain: true,
-    wrapAround: true
+    wrapAround: true,
+    prevNextButtons: false
+  });
+
+  $("#subscribe-form").on("submit", function(event) {
+    event.preventDefault();
+    if ($("#email").val() == "") {
+      alert("Please Submit A Valid E-mail Address.");
+    } else {
+      alert("Thanks for Subscribing!");
+    }
   });
 }); //end of doc ready
