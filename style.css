@@ -308,8 +308,9 @@ section h2 {
 
 /* responsive image */
 .carousel-cell img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  margin: 0 10%;
 }
 
 .main-carousel .carousel-cell {
@@ -317,7 +318,35 @@ section h2 {
 }
 
 #featured {
+  line-height: 2.25rem;
+  margin: 0 7.5% 4rem 7.5%;
+  width: 85%;
+}
+
+#featured h2 {
   margin-bottom: 4rem;
+}
+
+.productclass {
+  font-family: "Raleway";
+  font-size: 0.75rem;
+  text-align: center;
+  color: #969696;
+}
+
+.productdesc {
+  font-family: "Playfair Display Regular";
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fa5a5a;
+}
+
+.price {
+  font-family: "Raleway";
+  font-size: 1rem;
+  text-align: center;
+  color: #969696;
+  margin-top: 0.5rem;
 }
 
 /*NEWSLETTER*/
@@ -338,17 +367,44 @@ section h2 {
 
 #newsletter h2 {
   margin: 0 0 2rem 0;
+  text-shadow: 2px 2px 10px #6d6d6d;
 }
 
 #newsletter p {
-  margin: 0 25.25rem;
+  margin: 0 24.25rem;
   text-align: center;
 }
 
 form {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+form input[type="email"] {
+  font-family: "Raleway Light";
+  font-size: 1rem;
+  height: 3rem;
+  padding: 0.75rem 15rem 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 25px;
+  position: relative;
+  left: 4rem;
+}
+
+form input[type="submit"] {
+  background-color: #e2574c;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  border: 0;
+  border-radius: 25px;
+  position: relative;
+  right: 4rem;
+  top: 0.2rem;
 }
 
 /*FOOTER*/
