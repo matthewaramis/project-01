@@ -82,7 +82,7 @@
 .bodyfont {
   font-family: "Raleway Light";
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .headingfont {
@@ -126,22 +126,33 @@ header {
 header nav a {
   color: #e2574c;
   margin: 0rem 1rem 0 1rem;
+  font-family: "Raleway";
+  font-weight: 500;
   text-decoration: none;
-}
-
-.alohalogo {
-  width: 10rem;
-  margin-top: 1rem;
-}
-
-.cart-icon {
-  width: 4rem;
-  margin-top: 1rem;
 }
 
 header nav a:visited {
   text-decoration: none;
   color: #e2574c;
+}
+
+header nav {
+  width: 50%;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 1.75rem;
+}
+
+.alohalogo {
+  height: 4rem;
+  width: 25%;
+  margin-top: 1rem;
+}
+
+.cart-icon {
+  height: 4rem;
+  width: 25%;
+  margin-top: 1rem;
 }
 
 /*BANNER*/
@@ -158,11 +169,14 @@ header nav a:visited {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+  text-shadow: 2px 2px 10px #6d6d6d;
 }
 
 .banner p {
   color: white;
   text-align: center;
+  font-family: "Raleway";
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -181,53 +195,113 @@ header nav a:visited {
 }
 
 section h2 {
-  margin: 4rem 0 2rem 0;
+  margin: 4rem 0 1rem 0;
 }
 
 .container p {
   display: flex;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 400;
+  text-align: center;
+  line-height: 2.25rem;
+  margin: 1rem 25rem 1rem 25rem;
 }
 
 /*SHOP*/
 
+#shop {
+  margin-top: 4rem;
+  height: 30%;
+}
+
 #shop a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 2.25rem;
+  display: flex;
+  justify-content: center;
 }
 
-.container .shop-mens {
+#shop nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shop-mens {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)),
+    url("images/mens-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
   width: 50%;
-  height: 40rem;
-  background: url("images/mens-category.jpg");
-  background-size: 50%;
+  margin: 0;
+  padding: 10.75% 0 10.75% 0;
+  border: 0.25rem solid white;
+  border-left: 0;
 }
 
-.container .shop-trends {
-  background: url("images/trends-category.jpg");
-  background-size: 25%;
+.shop-trends {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)),
+    url("images/trends-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  width: 25%;
+  margin: 0;
+  padding: 10.75% 0 10.75% 0;
+  border: 0.25rem solid white;
 }
 
-.container .shop-glasses {
-  background: url("images/glasses-category.jpg");
-  background-size: 25%;
+.shop-glasses {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)),
+    url("images/glasses-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  width: 25%;
+  margin: 0;
+  padding: 10.75% 0 10.75% 0;
+  border: 0.25rem solid white;
+  border-right: 0;
 }
 
-.container .shop-sale {
-  background: url("images/sale-category.jpg");
-  background-size: 25%;
+.shop-sale {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)),
+    url("images/sale-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  width: 25%;
+  margin: 0;
+  padding: 10.75% 0 10.75% 0;
+  border: 0.25rem solid white;
+  border-left: 0;
 }
 
-.container .shop-bags {
-  background: url("images/bags-category.jpg");
-  background-size: 25%;
+.shop-bags {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)),
+    url("images/bags-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  width: 25%;
+  margin: 0;
+  padding: 10.75% 0 10.75% 0;
+  border: 0.25rem solid white;
 }
 
-.container .shop-womens {
-  background: url("images/womens-category.jpg");
-  background-size: 50%;
+.shop-womens {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)),
+    url("images/womens-category.jpg") no-repeat 50%;
+  background-size: cover, cover;
+  width: 50%;
+  margin: 0;
+  padding: 10.75% 0 10.75% 0;
+  border: 0.25rem solid white;
+  border-right: 0;
+}
+
+.shoplabel {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px #6d6d6d;
+}
+
+.shoplabel:hover {
+  color: #ffeab0;
 }
 
 /*FEATURED*/
@@ -266,10 +340,15 @@ section h2 {
   margin: 0 0 2rem 0;
 }
 
-.container .bodyfont {
-  margin: 0;
+#newsletter p {
+  margin: 0 25.25rem;
+  text-align: center;
+}
+
+form {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /*FOOTER*/
