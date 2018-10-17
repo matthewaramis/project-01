@@ -366,6 +366,9 @@ section h2 {
   background-size: auto, auto;
   background-position: bottom;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #newsletter h2 {
@@ -487,7 +490,7 @@ footer {
 @media all and (min-width: 600px) {
   .bodyfont {
     font-family: "Raleway Light";
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 500;
   }
 
@@ -501,11 +504,11 @@ footer {
   .italic-heading {
     font-family: "Playfair Display Italic";
     font-weight: 150;
-    font-size: 2.5rem;
+    font-size: 2.125rem;
   }
 
   .bold-heading {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
   }
 
   span {
@@ -522,14 +525,22 @@ footer {
 
   /*HEADER*/
 
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+
   header nav a {
     color: #e2574c;
-    margin: 0rem 1rem 0 1rem;
+    margin: 0rem 1rem;
     font-family: "Raleway";
-    font-size: 1rem;
     font-weight: 500;
-    text-align: center;
+    font-size: 0.875rem;
     text-decoration: none;
+    justify-content: space-between;
   }
 
   header nav a:visited {
@@ -538,34 +549,39 @@ footer {
   }
 
   header nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: 100%;
     text-align: center;
     font-weight: 900;
-    margin-top: 1.75rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    border: 0;
   }
 
   .alohalogo {
-    height: 4rem;
-    width: 25%;
+    height: 2.875rem;
+    width: 20%;
     margin-top: 1rem;
   }
 
   .cart-icon {
-    height: 4rem;
-    width: 12.5%;
+    height: 3rem;
+    width: 10%;
     margin-top: 1rem;
   }
 
   /*BANNER*/
 
   .banner {
-    height: 35rem;
+    height: 25rem;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.4)),
       url("../images/banner-girl.png") no-repeat,
       url("../images/flower-bkgd.jpg") repeat-x;
-    background-size: 100%, 16rem, 55rem;
-    background-position: center, center top 3.5rem, center;
+    background-size: 100%, 10rem, 48rem;
+    background-position: center, center top 2.75rem, top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,29 +594,26 @@ footer {
     text-align: center;
     font-family: "Raleway";
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .banner h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
   /*BODY*/
 
   section h2 {
-    margin: 4rem 0 1rem 0;
+    margin-top: 3rem;
   }
 
   .container p {
-    display: flex;
-    justify-content: center;
-    font-size: 1.15rem;
     font-weight: 400;
     text-align: center;
     line-height: 2.25rem;
-    margin: 1rem 25rem 1rem 25rem;
+    margin: 1rem 1rem;
   }
 
   /*SHOP*/
@@ -613,7 +626,6 @@ footer {
   #shop a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 2.25rem;
     display: flex;
     justify-content: center;
   }
@@ -622,6 +634,10 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  #shop span {
+    font-size: 1.75rem;
   }
 
   .shop-mens {
@@ -703,13 +719,13 @@ footer {
 
   /* responsive image */
   .carousel-cell img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
-    margin: 0 10%;
+    margin: 0 5%;
   }
 
   .main-carousel .carousel-cell {
-    width: 25%;
+    width: 50%;
   }
 
   #featured {
@@ -755,7 +771,6 @@ footer {
     background-position: bottom;
     color: #ffffff;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -766,7 +781,7 @@ footer {
   }
 
   #newsletter p {
-    margin: 0 24.25rem;
+    margin: 0 2.5rem;
     text-align: center;
   }
 
@@ -779,12 +794,12 @@ footer {
   form input[type="email"] {
     font-family: "Raleway Light";
     font-size: 1rem;
-    height: 3rem;
-    padding: 0.75rem 15rem 0.75rem 1.5rem;
+    height: 2.75rem;
+    padding: 0.5rem 20rem 0.5rem 1rem;
     border: 0;
     border-radius: 25px;
     position: relative;
-    left: 4rem;
+    left: 2.75rem;
   }
 
   form input[type="submit"] {
@@ -793,12 +808,12 @@ footer {
     font-family: "Raleway";
     font-size: 1rem;
     cursor: pointer;
-    height: 2.5rem;
+    height: 2.375rem;
     padding: 0rem 1.5rem 0rem 1.5rem;
     border: 0;
     border-radius: 25px;
     position: relative;
-    right: 4rem;
+    right: 5.125rem;
     top: 0.2rem;
   }
 
@@ -807,7 +822,7 @@ footer {
   footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 18rem;
     max-width: 100%;
     background-color: #242424;
@@ -816,11 +831,13 @@ footer {
 
   .copyright {
     color: #ffffff;
+    text-align: left;
   }
 
   .copyright p {
     font-family: "Playfair Display Regular";
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
   .copyright a:visited {
@@ -832,7 +849,7 @@ footer {
   }
 
   .top-copyright {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .contactinfo {
@@ -850,7 +867,7 @@ footer {
   }
 
   .socialmedia {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .socialmedia ul li {
@@ -869,6 +886,10 @@ footer {
   }
 
   .socialmedia span {
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 2rem;
     margin-left: 1rem;
   }
 
