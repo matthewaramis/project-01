@@ -417,7 +417,7 @@ form input[type="submit"] {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 18rem;
@@ -465,6 +465,7 @@ footer {
 
 .socialmedia ul li {
   list-style: none;
+  display: inline-block;
 }
 
 .socialmedia a {
@@ -872,6 +873,9 @@ footer {
 
   .socialmedia ul li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .socialmedia a {
@@ -1285,6 +1289,9 @@ footer {
 
   .socialmedia ul li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .socialmedia a {
