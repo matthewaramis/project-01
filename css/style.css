@@ -904,7 +904,7 @@ footer {
 
 /*--------------------BREAKPOINT DESKTOP--------------------*/
 
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1024px) {
   .bodyfont {
     font-family: "Raleway Light";
     font-size: 1rem;
@@ -945,8 +945,9 @@ footer {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: auto;
   }
 
   header nav a {
@@ -954,7 +955,9 @@ footer {
     margin: 0rem 1rem 0 1rem;
     font-family: "Raleway";
     font-weight: 500;
+    font-size: 1rem;
     text-decoration: none;
+    justify-content: space-between;
   }
 
   header nav a:visited {
@@ -963,10 +966,10 @@ footer {
   }
 
   header nav {
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-weight: 900;
-    margin-top: 1.75rem;
+    margin-top: 0.75rem;
   }
 
   .alohalogo {
@@ -1038,7 +1041,6 @@ footer {
   #shop a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 2.25rem;
     display: flex;
     justify-content: center;
   }
@@ -1047,6 +1049,10 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  #shop span {
+    font-size: 2.375rem;
   }
 
   .shop-mens {
@@ -1116,7 +1122,6 @@ footer {
   .shoplabel {
     font-family: "Raleway";
     font-weight: 500;
-    font-size: 2.4rem;
     text-shadow: 2px 2px #6d6d6d;
   }
 
