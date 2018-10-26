@@ -143,7 +143,8 @@ header {
 }
 
 header nav a {
-  color: #e2574c;
+  /* color: #e2574c; */
+  color: #db3a26;
   margin: 0rem 1rem;
   font-family: "Raleway";
   font-weight: 500;
@@ -154,7 +155,8 @@ header nav a {
 
 header nav a:visited {
   text-decoration: none;
-  color: #e2574c;
+  /* color: #e2574c; */
+  color: #db3a26;
 }
 
 header nav {
